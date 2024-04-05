@@ -19,7 +19,7 @@ type responseDataType = {
 };
 
 export default async function Home() {
-  const response = await fetch("http://localhost:3000/api/products", {
+  const response = await fetch(process.env.URL + "/api/products", {
     cache: "no-store",
   });
   const data = await response.json();
