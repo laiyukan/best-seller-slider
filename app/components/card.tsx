@@ -37,7 +37,7 @@ const Card = ({ product }: CardProps) => {
           <p>{product.memory}</p>
         </div>
       </div>
-      <div className="mt-auto flex h-[176px] flex-col items-start gap-2 bg-[#f2f6fa] p-5">
+      <div className="bg-ibp-light-blue mt-auto flex h-[176px] flex-col items-start gap-2 p-5">
         <div className="bg-ibp-red rounded-2xl px-2 py-1 text-xs text-white">
           SAVE ${product.discount}
         </div>

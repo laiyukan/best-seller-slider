@@ -43,9 +43,15 @@ export default async function Home() {
 
   return (
     <main>
-      <div>
+      <section className="my-4">
+        <h1 className="text-center text-3xl font-bold">
+          Best Selling Gaming PC
+        </h1>
+        <h2 className="mb-2 text-center text-2xl font-bold">
+          Prebuilt & Custom
+        </h2>
         <Slider products={products} />
-      </div>
+      </section>
     </main>
   );
 }

@@ -14,6 +14,7 @@ const config: Config = {
       colors: {
         "ibp-red": "#ff1b1b",
         "ibp-zinc": "#929292",
+        "ibp-light-blue": "#f2f6fa",
       },
       fontSize: {
         xxs: "0.7rem",
