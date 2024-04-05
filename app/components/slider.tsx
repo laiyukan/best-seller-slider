@@ -72,14 +72,16 @@ const Slider = ({ products }: SliderProps) => {
           }}
         >
           <button
-            className="size-9 rounded-xl border border-solid text-xl shadow-outer hover:bg-ibp-light-blue"
+            className="size-9 rounded-xl border border-solid text-xl shadow-outer hover:bg-ibp-light-blue disabled:bg-transparent disabled:text-ibp-zinc disabled:shadow-none"
             onClick={handleLeftClick}
+            disabled={inViewIndex === 0}
           >
             &lt;
           </button>
           <button
-            className="size-9 rounded-xl border border-solid text-xl shadow-outer hover:bg-ibp-light-blue"
+            className="size-9 rounded-xl border border-solid text-xl shadow-outer hover:bg-ibp-light-blue disabled:bg-transparent disabled:text-ibp-zinc disabled:shadow-none"
             onClick={handleRightClick}
+            disabled={inViewIndex === products.length - cardNum}
           >
             &gt;
           </button>
